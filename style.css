@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: rgb(17, 10, 58);
+  color: white;
+}
+.container {
+  width: 1300px;
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 5rem 0;
+}
+.container .input {
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+}
+.container .input input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+.container .input i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: rgb(37, 37, 37);
+}
+
+.container .list {
+  width: 100%;
+  color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+.container .list li {
+  width: 48%;
+  padding: 1rem;
+  border-radius: 5px;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.container .list li:nth-child(2n) {
+  margin-left: 1rem;
+}
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-wrapper .info {
+  text-align: left;
+}
+.container .list li .info-wrapper img {
+  width: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.info-wrapper .info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.info-wrapper .info p {
+  font-weight: 500;
+}
